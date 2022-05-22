@@ -1,0 +1,50 @@
+div{        
+    width: 200px;
+    height: 200px;
+}
+.cube{
+    margin: 100px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 3s;
+    
+    
+}
+.cube div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 200px;
+    font-size: 100px;
+}
+.front{
+    transform: translateZ(100px);            
+    background-color: blue;
+}
+.back{
+    transform: translateZ(-100px);
+    background-color: pink;
+}
+.left{
+    transform: translateX(-100px) rotateY(-90deg);
+    background-color: rgb(235, 15, 52);
+}
+.right{
+    transform: translateX(100px) rotateY(90deg);
+    background-color: rgb(11, 227, 141);
+}
+.top{
+    transform: translateY(-100px) rotateX(90deg);
+    background-color: rgb(111, 25, 216);
+}
+.bottom{
+    transform: translateY(100px) rotateX(-90deg);
+    background-color: rgb(204, 217, 19);
+}
+
+
+.cube:hover{
+    transform: rotateY(380deg) rotateX(160deg) rotateZ(90deg);
+}
