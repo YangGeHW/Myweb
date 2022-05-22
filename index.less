@@ -1,0 +1,96 @@
+//out:./css/
+
+body{
+    background-color: #000;
+}
+.wrapper{
+    width: 1400px;
+    margin: 0 auto;
+
+}
+//顶部 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 50px;
+    width: 100vw;
+    line-height: 50px;
+    
+    background-color: rgba(0,0,0,.6);
+    padding: 0 40px;
+    .left{
+        float: left;
+        h2{
+            &:hover{
+                a{
+                    color: orange;
+                }
+            }
+        }
+    }
+    .right{
+        float: right;
+        li{
+            margin-left: 20px;
+            float: left;
+            &:hover{
+                a{
+                    color: orange;
+                }
+            }
+        }
+    }
+    a{color: #fff;}
+}
+// 首页大图
+.top_name{
+    
+    height: 100vh;
+    width: 99vw;
+    // background-color: rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 100vh;
+    color: #fff;
+    background-image: url(../image/background_image.jpg);
+    background-size:100% 100%;
+    overflow:hidden
+    h1{
+        font-size: 50px;
+    }
+}
+// 内容
+.content{
+    margin: 0 auto;
+    margin-top: 20px;
+    section{      
+        height: 200px;
+          
+        a{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            .text{
+               flex: 5;
+               h3{
+                   text-align: center;
+                   font-size: 40px;
+               }
+            }
+            img{
+                display: block;
+                flex: 1;
+                float: right;
+                width: 180px;
+                height: 180px;
+            }
+        }
+        &:nth-child(2n){
+            a{
+                justify-content:space-between;
+                flex-flow:row-reverse;
+            }
+        }
+    }
+}

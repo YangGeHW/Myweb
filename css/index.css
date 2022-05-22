@@ -1,8 +1,78 @@
-.wrapper{
-    width: 1400px;
-    margin: 0 auto;
+body {
+  background-color: #000;
 }
-li{
-    margin-left: 20px;
-    margin-top: 10px;
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100vw;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 40px;
+}
+header .left {
+  float: left;
+}
+header .left h2:hover a {
+  color: orange;
+}
+header .right {
+  float: right;
+}
+header .right li {
+  margin-left: 20px;
+  float: left;
+}
+header .right li:hover a {
+  color: orange;
+}
+header a {
+  color: #fff;
+}
+.top_name {
+  height: 100vh;
+  width: 99vw;
+  text-align: center;
+  line-height: 100vh;
+  color: #fff;
+  background-image: url(../image/background_image.jpg);
+  background-size: 100% 100%;
+}
+.top_name overflow:hidden h1 {
+  font-size: 50px;
+}
+.content {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.content section {
+  height: 200px;
+}
+.content section a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.content section a .text {
+  flex: 5;
+}
+.content section a .text h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.content section a img {
+  display: block;
+  flex: 1;
+  float: right;
+  width: 180px;
+  height: 180px;
+}
+.content section:nth-child(2n) a {
+  justify-content: space-between;
+  flex-flow: row-reverse;
 }
