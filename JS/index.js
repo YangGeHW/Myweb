@@ -3,7 +3,7 @@ var lxfs_btn = document.querySelector('#lxfs_btn')
 var lxfs_flag = 0
 lxfs_btn.onclick = function(){
     lxfs_flag = !lxfs_flag
-    if(lxfs_flag == 0){
+    if(lxfs_flag == 1){
 
         lxfs.style.display = 'block';
     }
