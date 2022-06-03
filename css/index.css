@@ -30,11 +30,25 @@ header .right {
   float: right;
 }
 header .right li {
+  position: relative;
   margin-left: 20px;
   float: left;
+  color: #fff;
 }
 header .right li:hover a {
   color: orange;
+}
+header .right li .lxfs {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: -20px;
+  bottom: -1;
+  width: 240px;
+  text-align: center;
+}
+header .right li .lxfs span {
+  font-size: 12px;
 }
 header a {
   color: #fff;

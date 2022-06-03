@@ -36,14 +36,28 @@ header{
     }
     .right{
         float: right;
-        li{
+        li{ 
+            position: relative;
             margin-left: 20px;
             float: left;
+            color: #fff;
             &:hover{
                 a{
                     color: orange;
                 }
             }
+                .lxfs{
+                    display: none;
+                    background-color: rgba(0,0,0,.3);
+                    position: absolute;
+                    right: -20px;
+                    bottom: -1;
+                    width: 240px;
+                    text-align: center;
+                    span{
+                        font-size:12px;
+                    }
+                }
         }
     }
     a{color: #fff;}
