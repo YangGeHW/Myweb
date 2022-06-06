@@ -54,15 +54,16 @@ header a {
   color: #fff;
 }
 .top_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 99vw;
-  text-align: center;
-  line-height: 100vh;
   color: #fff;
   background-image: url(../image/background_image.jpg);
   background-size: 100% 100%;
-}
-.top_name overflow:hidden h1 {
+  overflow: hidden;
   font-size: 50px;
 }
 .content {
