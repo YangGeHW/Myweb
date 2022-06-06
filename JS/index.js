@@ -18,8 +18,8 @@ lxfs.onmouseout = function(){
             var minute = document.querySelector('#minute')
            
             var time = new Date()
-            month.innerHTML = time.getMonth() + '月'
-            day.innerHTML = time.getDay() + '日'
+            month.innerHTML = time.getMonth()+ 1 + '月'
+            day.innerHTML = time.getDate() + '日'
             hour.innerHTML = time.getHours() + '时'
             minute.innerHTML = time.getMinutes() + '分'
             
